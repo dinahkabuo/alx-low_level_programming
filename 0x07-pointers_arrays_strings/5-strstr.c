@@ -5,7 +5,7 @@
  * @needle: substring in string
  * Return: char *
  */
-char *_strstr(char *haystack, *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	return (strstr(haystack, needle));
 }
