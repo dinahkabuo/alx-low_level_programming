@@ -6,7 +6,7 @@
  * @accept: contains bytes
  * Return: number of bytes in initial segment which contains bytes from accept
  */
-unsignes int _strapn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int y = 0;
 	int x;
