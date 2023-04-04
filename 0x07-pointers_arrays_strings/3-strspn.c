@@ -1,13 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strspn - function that gets length of prefix substring
- *  @s: initial segment
- *  @accept: input
- *  Return: number of bytes in the initial segment
+ * _strspn - function that gets the length of a prefix substring
+ * @s: initial segment
+ * @accept: contains bytes
+ * Return: number of bytes in initial segment which contains bytes from accept
  */
-unsigned int _strspn(char *s, char *accept)
+unsignes int _strapn(char *s, char *accept)
 {
-	unsigned int n = 0;
+	unsigned int y = 0;
 	int x;
 
 	while (*s)
@@ -16,13 +17,15 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == accept[x])
 			{
-				n++;
+				y++;
 				break;
 			}
 			else if (accept[x + 1] == '\0')
-				return (n);
+			{
+				return (y);
+			}
 		}
-		s++;
+		s++
 	}
-	return (n);
+	return (y);
 }
